@@ -5,6 +5,7 @@ ARG OM_URL
 ARG AA_URL
 ARG API_KEY
 ARG GROUP_ID
+ARG DB_PORT
 ADD bootstrap.sh /
 ADD startup.sh /
 ENV DEBIAN_FRONTEND=noninteractive

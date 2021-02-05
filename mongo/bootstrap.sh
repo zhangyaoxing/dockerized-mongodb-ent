@@ -12,5 +12,7 @@ sed -i "s%mmsApiKey=.*%mmsApiKey=$API_KEY%" /etc/mongodb-mms/automation-agent.co
 sed -i "s%mmsBaseUrl=.*%mmsBaseUrl=$OM_URL%" /etc/mongodb-mms/automation-agent.config
 mkdir -p /data/{db,log}
 chown mongodb:mongodb -R /data
+echo $DB_HOSTNAME > /etc/hostname
+hostname -f $DB_HOSTNAME
 
 rm -rf /var/lib/apt/lists/*
