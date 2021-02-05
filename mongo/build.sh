@@ -12,6 +12,8 @@ if [ -z "`docker images -q $DOCKER_USERNAME/mongo`" ]; then
             --build-arg AA_URL=$AA_URL \
             --build-arg API_KEY=$API_KEY \
             --build-arg GROUP_ID=$GROUP_ID \
+            --build-arg DB_HOSTNAME=$DB_HOSTNAME \
+            --build-arg DB_PORT=$DB_PORT \
             --build-arg http_proxy=$_HTTP_PROXY \
             --build-arg https_proxy=$_HTTPS_PROXY \
             ./ -t $DOCKER_USERNAME/mongo
