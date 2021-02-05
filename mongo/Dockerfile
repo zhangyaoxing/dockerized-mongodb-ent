@@ -2,6 +2,7 @@
 FROM ubuntu:18.04
 
 ARG OM_URL
+ARG AA_URL
 ARG API_KEY
 ARG GROUP_ID
 ADD bootstrap.sh /
