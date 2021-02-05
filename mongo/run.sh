@@ -1,3 +1,3 @@
 #!/bin/bash
-./config.sh
-docker-compose up
+source ./config.sh
+docker-compose up -d

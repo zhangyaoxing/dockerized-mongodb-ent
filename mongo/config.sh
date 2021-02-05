@@ -7,3 +7,5 @@ export OM_URL="http://om.yaoxing.online:8080" # mmsBaseUrl in Ops Manager
 export AA_URL="$OM_URL/download/agent/automation/mongodb-mms-automation-agent-manager_10.14.16.6437-1_amd64.ubuntu1604.deb" # automation agent URL
 export DB_PATH="/data/db" # dbPath for MongoDB
 export LOG_PATH="/data/log" # logPath for MongoDB
+export DB_HOSTNAME="node1.yaoxing.online" # hostname for current container. The host name must be resolvable.
+export DB_PORT="27017" # DB port

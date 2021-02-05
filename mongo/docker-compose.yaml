@@ -3,7 +3,7 @@ services:
   mongo:
     image: "${DOCKER_USERNAME}/mongo"
     ports:
-      - "27018:27017"
+      - "${DB_PORT}:${DB_PORT}"
     restart: always
     volumes:
       - ${DB_PATH}:/data/db

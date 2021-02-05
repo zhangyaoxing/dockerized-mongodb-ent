@@ -17,4 +17,4 @@ VOLUME ["/data/db", "/data/log"]
 CMD "/startup.sh"
 
 # Expose ports.
-EXPOSE 27017
+EXPOSE ${DB_PORT}
