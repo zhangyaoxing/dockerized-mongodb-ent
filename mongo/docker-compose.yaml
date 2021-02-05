@@ -1,6 +1,7 @@
 version: "3.8"
 services:
   mongo:
+    hostname: "${DB_HOSTNAME}"
     image: "${DOCKER_USERNAME}/mongo"
     ports:
       - "${DB_PORT}:${DB_PORT}"
