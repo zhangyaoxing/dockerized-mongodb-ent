@@ -9,6 +9,7 @@ if [ -z "`docker images -q $DOCKER_USERNAME/mongo`" ]; then
     fi
 
     docker build --build-arg OM_URL=$OM_URL \
+            --build-arg AA_URL=$AA_URL \
             --build-arg API_KEY=$API_KEY \
             --build-arg GROUP_ID=$GROUP_ID \
             --build-arg http_proxy=$_HTTP_PROXY \
